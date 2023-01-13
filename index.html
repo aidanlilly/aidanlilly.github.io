@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ICS4U</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="maze.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MAZE</a>
+    <a href="swing.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SWING</a>
+    <a href="instagram.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WEB SCRAPER</a>
+    <a href="ml.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GRADIENT DESCENT</a>
+    <a href="https://drive.google.com/drive/folders/18Gu0Z9dqo6Y6841iG4o1Xcl7Kfs-1qGR?usp=sharing" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ASSIGNMENTS</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="header.png" style="width:100%" height="400">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Computer Science Portfolio</h3>
+      <p><b>2021</b></p>   
+    </div>
+  </div>
+
+
+  <!-- The Band Section -->d
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
+    <h2> <a href="maze.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" id="navDemo">Maze Generation</a></h2>
+    <p class="w3-opacity"><i>Depth-First Search</i></p>
+    <p class="w3-justify">This program starts by generating a grid. Starting from the 0th index, or top left, it randomly selects a direction to go. It then proceeds one cell in that direction removing the wall between its current cell and the new one. The new cell is then appended to a queue and marked as visited. This process will continue until the program becomes trapped at a location as all neighbouring cells have been visited. To proceed, it will begin backtracking through the queue, testing for unvisited neighbouring cells. This process will continue until it backtracks to the 0th index with no neighbouring cells remaining. Once completed, the user will then be given control of a character that they can guide through the newly generated solvable maze. </p>
+    <iframe width="750" height="750" src="https://openprocessing.org/sketch/1111088" title="W3Schools Free Online Web Tutorials"></iframe>
+    <br>
+    <h2> <a href="swing.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" id="navDemo">Swing Phsyics</a></h2>
+    <p class="w3-opacity"><i>Vector Math</i></p>
+    <p class="w3-justify">This program allows the user to swing through a low-poly rendered 3D space. The environment and swing mechanics are inspired by Japanese anime "Attack on Titan." The game functions within a loop. Each iteration of that loop, the players location in the 3D space is stored as a 3-vector. The forward facing vector is then drawn from the player to its forward facing position, in other words wherever the red dot is located. When the user right clicks, the program checks if the dot has made contact with an actors hitbox within a specified range. If this is the case, then a vector is drawn from the actor to the user. Each proceeding iteration draws the user at the head of that vector. As well, its magnitude is decrementing resulting in the character pulling towards it causing the forward force. To simulate the swinging mechanic, that forward force vector is then multiplied with a gravity vector which makes the user appear as though they are swinging.</p>
+
+
+    <video width="750" controls autoplay>
+    <source src="aot.mov" type="video/mp4">
+	</video>
+
+    <h2> <a href="instagram.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" id="navDemo">Instagram Messaging Bot</a></h2>
+    <p class="w3-opacity"><i>Web Scraping</i></p>
+    <p class="w3-justify">This bot is capable of opening the Instagram web page and acessing different HTML elements of the page in order to carry out its assigned task. The program knows which buttons to click or words to type based on the HTML elements used to instruct it. This particular bot is instructed to log in, open up Instagram private messages, and message a specified user a given message an exact number of times.</p>
+
+    <video width="750" controls autoplay>
+    <source src="webscrape.mp4" type="video/mp4">
+	</video>
+
+	<h2> <a href="ml.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" id="navDemo">Machine Learning</a></h2>
+    <p class="w3-opacity"><i>Gradient Descent</i></p>
+    <p class="w3-justify">This linear regression model will use the square error function to predict the value of any input within a dataset according to other values with simlar features. This program is limited to two dimensions as it is for presentation purposes but it can be expanded into an infinite with simple modifications. The main purpose of the program is to create a line of best fit through a randomized dataset which can then be used to predict values.</p>
+
+    <img src="gradient.png" style="width:100%" height="400">
+  </div>
+
+  
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Ottawa, ON<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
