@@ -39,6 +39,13 @@ from selenium.webdriver.common.keys import Keys
 import time
 from webdriver_manager.chrome import ChromeDriverManager
 
+user = "" #Variables left unassigned for privacy reasons
+pass = ""
+recipient = ""
+txt = "Hello!"
+numOfMsgs = 100
+
+
 PATH = "C:\Program Files (x86)\chromedriver.exe" #Locate chromedriver application
 
 driver = webdriver.Chrome(ChromeDriverManager().install()) #Run chrome
@@ -48,13 +55,13 @@ driver.get('https://www.instagram.com/') #Go to instagram website
 
 driver.implicitly_wait(10)
 
-username_input = driver.find_element_by_css_selector("input[name='username']") #Find textbox for username and password
-password_input = driver.find_element_by_css_selector("input[name='password']")
+user_input = driver.find_element_by_css_selector("input[name='username']") #Find textbox for username and password
+pass_input = driver.find_element_by_css_selector("input[name='password']")
 
-username_input.send_keys(username) #Input username and password
-password_input.send_keys(password)
+user_input.send_keys(user) #Input relevant information to textboxes
+pass_input.send_keys(pass)
 
-password_input.send_keys(Keys.RETURN)
+pass_input.send_keys(Keys.RETURN)
 
 driver.implicitly_wait(10)
 
@@ -76,7 +83,7 @@ driver.implicitly_wait(10)
 
 message = driver.find_element_by_xpath('//textarea[@placeholder="Message..."]') #Find textbox for DM
 
-for i in range(25): #Send messages
+for i in range(numOfMsgs): #Send messages
   message.send_keys(txt)
   message.send_keys(Keys.RETURN)
   </code>
