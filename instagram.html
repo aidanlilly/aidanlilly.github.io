@@ -21,10 +21,8 @@ body {font-family: "Lato", sans-serif}
     <a href="swing.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SWING</a>
     <a href="instagram.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WEB SCRAPER</a>
     <a href="ml.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GRADIENT DESCENT</a>
-    <a href="https://drive.google.com/drive/folders/18Gu0Z9dqo6Y6841iG4o1Xcl7Kfs-1qGR?usp=sharing" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ASSIGNMENTS</a>
     <div class="w3-dropdown-hover w3-hide-small">    
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
 
@@ -42,12 +40,12 @@ import time
 from webdriver_manager.chrome import ChromeDriverManager
 
 username = "" #Account user
-password = "" #Account user password
-recipient = "" #Intended receiver
-txt = "Hello" #Message to send
-numMessages = 150 #Number of messages to send
+password = "" #Account password
+recipient = "" #Intended receiver's user
+txt = "" #Message to send
+numMessages = 0 #Number of messages to send
 
-PATH = "C:\Program Files (x86)\chromedriver.exe" #Find program to access chrome
+PATH = "C:\Program Files (x86)\chromedriver.exe" #Locate chromedriver application
 
 driver = webdriver.Chrome(ChromeDriverManager().install()) #Run chrome
 driver.implicitly_wait(5)
