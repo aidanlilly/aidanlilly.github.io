@@ -273,7 +273,7 @@ background: #282c34;
   backface-visibility: hidden;
   transform: translateY(0);
   transition: transform 1s ease-in-out;
-  z-index: 0;
+  z-index: 1001;
   
 }
 
