@@ -537,6 +537,7 @@ button {
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 .about-page button{
   justify-content: left;
