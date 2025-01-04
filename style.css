@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    z-index: 100;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+}
+
+.section.header {
+    position: absolute; /* Overlaying position */
+    top: 200px;
+    left: 0;
+    width: 100%;
+    color: white; /* Text color for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2; /* Ensure it's above the home section */
+    font-size: 7em;
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black; /* Black outline effect */
+    
+}
+
+/* Home section */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #4c6ef5, #6c757d);
+    color: white;
+    text-align: center;
+}
+
+.center-name h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.center-name p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+/* Center alignment for social links */
+.center-name .social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Social media icon styling */
+.social-icon {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for icons */
+.social-icon:hover {
+    transform: scale(1.2); /* Slight zoom-in effect */
+    cursor: pointer;
+}
+
+
+/* Content section */
+
+/*SECTION 2*/
+#section2 {
+    background-color: #ffffff; /* Light coral color */
+    padding: 5rem 0;
+}
+
+/* General Styling */
+.about-me {
+    padding: 50px 20px;
+    background: #f4f7fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 400px;
+    height: 350px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center 30%;  /* Adjust this as needed */
+    margin-bottom: 20px;
+}
+
+
+.profile-info h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 1.7rem;
+    color: #555;
+}
+
+.profile-info a {
+    text-decoration: none;
+    color: #4c6ef5;
+    font-weight: bold;
+}
+
+.profile-info a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.skills .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-context {
+    font-size: 1.0rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+.progress-bar {
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    width: 100%;
+    height: 8px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #4c6ef5;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.percentage {
+    font-size: 1rem;
+    color: #333;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .profile, .skills {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/*SECTION 3 */
+
+
+
+
+
+
+
+/* Section styling */
+#section3 {
+    padding: 50px 20px; /* Added padding on the sides */
+    background-color: #f9f9f9;
+    text-align: center; /* Center-align the section title */
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid */
+    gap: 20px;
+    max-width: 1200px; /* Max width of the grid */
+    margin: 0 auto; /* Center the grid horizontally */
+    padding: 0 20px; /* Padding inside the grid */
+}
+
+/* Project Card Styling */
+.project-card {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Project Info Overlay */
+.project-info {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.5rem;
+}
+
+/* Project Card Hover Effects */
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Show project info on hover */
+.project-card:hover .project-info {
+    transform: translateY(0);
+}
+
+/* More Info Link */
+.more-info {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more-info:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effects on Images */
+.project-card:hover .project-image {
+    opacity: 0.8;
+}
+
+/* Styling for Project Mini Title */
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #f2f2f2; /* Light background */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between title and image */
+    text-transform: uppercase;
+}
+
+/* Optional: Adjust the project image styles for better layout */
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Additional Styles for Project Info */
+.project-info {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 2px solid #f1f1f1;
+}
+
+.more-info {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more-info:hover {
+    text-decoration: underline;
+}
+
+/* Adjust the positioning of the first project image */
+.project-card:nth-child(4) .project-image {
+    object-position: center 0%;  /* Adjust this as needed */
+}
+
+/* Adjust the positioning of the first project image */
+.project-card:nth-child(2) .project-image {
+    object-position: 30% center;  /* Adjust this as needed */
+}
+
+
+/*SECTION 4*/
+
+#section4 {
+    background-color: #D5AAFF; /* Light lavender color */
+    padding: 5rem 0;
+    height: 100vh;
+}
+
+
+/*FOOTER*/
+/* Footer Styling */
+.footer {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa; /* Slightly lighter for subtle contrast */
+}
+
+.footer-links,
+.social-icons {
+    margin: 15px 0;
+}
+
+.footer-links a,
+.social-icons a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.social-icons a:hover {
+    color: #00bcd4; /* Aqua color on hover */
+}
+
+.social-icons a {
+    font-size: 18px; /* Slightly larger for social icons */
+    display: inline-block;
+}
+
+.footer a {
+    display: inline-block;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .footer-links,
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-links a,
+    .social-icons a {
+        margin: 5px;
+    }
+}
+
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+
+
+
+
+
+.myH2 {
+	text-align:center;
+	font-size: 4rem;
+}
+.myP {
+	text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 20px;
+}
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}

@@ -3,229 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidan Lilly</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="landing-page">
-        <div class='console-container'>
-            <span id='text'></span>
-            <div class='console-underscore' id='console'>&#95;</div>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#section1">Aidan Lilly</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><a href="#section3">Projects</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
         </div>
-      </div>
+    </nav>
 
-    <header class="header">
-        <nav>
-            <div class="logo"id="logo-link" onclick="homeFunc()">Aidan Lilly</div>
-            <div class="instructions">Select a Project to Explore</div>
-            <ul class="nav-links">
-                <li onclick="openAboutPage()"><a>About</a></li>
-                <li onclick="openContactInfo()"><a>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="home" id="section1">
+        <div class="center-name">
+            <h1>Aidan Lilly</h1>
+            <p>Computer Science Student | AI Enthusiast | Professional Music Listener</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/aidan-lilly" target="_blank">
+                    <img src="imgs/linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/yourgithub" target="_blank">
+                    <img src="imgs/github.png" alt="GitHub" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </section>
     
-    <!--About Page-->
-    <div id="about-page" class="about-page">
-      <button class="close-about-button" onclick="closeAboutPage()">&rarr; Close</button>
-      <div class="about-content">
-        <img id="selfie" src="selfielols.png">
-          <h2>About Me</h2>
-          <p>
-            Hey there! I'm Aidan, a second-year computer science student at McGill University in the honours stream. When 
-            I'm not buried in code or textbooks, you can find me doing a bunch of cool 
-            things that keep life interesting. However, recently I have been interested in exploring search algorithms,
-            having just recently completed an introductory graph theory course I find them to be fascinating.<br/><br/>
-            Beyond the academic sphere, I'm an avid basketball enthusiast who never misses an OKC Thunder game. Maybe this will
-            be the year they finally win the championship! (They never do). Along with basketball, I also love to play video games
-            with my friends. <br/><br/>Please feel free to reach out to me if there is anything
-            you would like to talk about, be it algorithms, basketball, or anything you are passionate about as I love to learn! Thank
-            you for checking out my project page and I hope you may find inspiration for your next big project!
-          </p>
-      </div>
 
-      <!--Contact Info-->
-      <div id="contact-overlay-id" class="contact-overlay">
-        <div class="contact-overlay-content">
-            <h2>Contact Information</h2>
-            <p>Email: aidanlilly23@gmail.com</p>
-            <button id="closeOverlay" onclick="closeContactInfo()">Close</button>
-        </div>
-    </div>
-
-  </div>
-
-    <div class="scene">
-        <div class="carousel">
-          <div class="carousel__cell">
-            <div class="carousel__cell-1" id="cell1" onclick="cell1Clicked()">
-            <iframe id='iframe' class="maze-iframe" src="https://openprocessing.org/sketch/1111088/embed/" scrolling="no"></iframe>
-          </div>
-          </div>
-          <div class="carousel__cell">
-            <div class="carousel__cell-2" id="cell2" onclick="cell2Clicked()">
-                <img class="movie-img" src="movies.png" alt="Movie Social Network">
+    <section id="section2" class="section about-me">
+        <div class="about-container">
+            <!-- Profile Section -->
+            <div class="profile">
+                <div class="profile-image">
+                    <!-- Placeholder for your image -->
+                    <img src="imgs/aidan.jpeg" alt="Aidan Lilly">
+                </div>
+                <div class="profile-info">
+                    <h2>Aidan Lilly</h2>
+                    <p class="bio">Hey there! I’m Aidan, a third-year honours computer science student at McGill University, currently knee-deep in the world of algorithms, coding, and caffeine. I’m all about scientific computing (numerical linear algebra has my heart), and I can’t get enough of machine learning and computer vision—basically teaching machines how to see and understand the world like humans do. When I’m not immersed in code or debugging, you’ll probably find me listening to the same song on repeat until I can't stand it anymore. I love what I do, and I'm excited to keep pushing the boundaries of tech one sleepless night at a time! Feel free to reach out to me, I am always down to talk about cs or anything else.</p>
+    
+                    <p><strong>Email:</strong> <a href="mailto:aidanlilly23@gmail.com">aidanlilly23@gmail.com</a></p>
+                </div>
             </div>
+    
+            <!-- Skills Section -->
+            <div class="skills">
+                <h3 class="section-title">Skills</h3>
+                <div class="skill-card">
+                    <h4>MATLAB</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p class="skill-context">Courses, Research</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Python</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p class="skill-context">Courses, Personal Projects</p>
+                </div>
+                <div class="skill-card">
+                    <h4>C/C++</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <p class="skill-context">Courses</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Java</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <p class="skill-context">Courses</p>
+                </div>
+                <div class="skill-card">
+                    <h4>JavaScript</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <p class="skill-context">Personal Projects</p>
+                </div>
             </div>
-          <div class="carousel__cell">
-          <div class="carousel__cell-3" id="cell3" onclick="cell3Clicked()">
-            <video class="aot-trailer">
-                <source src="aot.mov" type="video/mp4">
-            </video>
-          </div>
-          </div>  
         </div>
-        <div class="tile-info-container"></div>
-        <div class="tile-info" id="tile1-info">
-          <div class="title-container">
-            Maze Generation: Depth-First-Search Algorithm Visualizer
-          </div>
-          </div>
-          <div class="tile-info" id="tile2-info">
-            Movie Social Network
-          </div>
-          <div class="tile-info" id="tile3-info">
-            3D Video Game: Inspired by Attack on Titan
-          </div>
-      </div>
-
-
-      <div class="overlay" id="overlay1">
-        <div class="overlay-content">
-          <button class="close-button" id="btn1" onclick="closeOverlay1()">X</button>
-          <div id="iframe-container"></div>
-          <!-- Description at the bottom center -->
-          <div class="overlay-tile-info" id="overlay-tile1-info">
-            <p>Maze Generation: Depth-First-Search Algorithm Visualizer</p>
-          </div>
-          <div class="overlay-tile-desc" id="overlay-tile1-desc">
-            <p>This is a maze generator that utilizes the depth-first search algorithm to create captivating and challenging mazes. With this generator, you can explore the fascinating world of maze generation as a spectator or player.</p>
-          </div>
-          <!-- Languages and icons -->
-
-          <div class="key-features" id="key-features1">
-            <h3 id="key-features-title">Key Features:</h3>
-            <li>Unique and Solvable Mazes</li>
-            <li>Real-Time Visualization</li>
-            <li>Interactive Exploration</li>
-            <li>User-Friendly Interface</li>
-          </div>
-
-          <div class="icons-container" id="icons-container1">
-            <h3>Made Using: </h3>
-            <div class="icon" title="Java">
-              <i class="devicon-java-plain colored"></i>
-              <span>Java</span>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <section id="section3" class="section projects">
+        <h3 class="section-title">My Projects</h3>
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-title">Norm Regularized Sphere Decoding</div>
+                <img src="imgs/spheredecode.png" alt="Project 2" class="project-image">
+                <div class="project-info">
+                    <h4>Norm Regularized Sphere Decoding</h4>
+                    <p>L1/L0 norm regularized integer least squares sphere decoding.</p>
+                    <a href="#" class="more-info">More Info</a>
+                </div>
             </div>
-            <div class="icon" title="Java">
-              <i class="devicon-processing-plain colored"></i>
-              <span>Processing</span>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-title">Live SIFT Object Detection</div>
+                <img src="imgs/SIFT.png" alt="Project 3" class="project-image">
+                <div class="project-info">
+                    <h4>SIFT Object Detection</h4>
+                    <p>Given an object, this will locate it in a video using SIFT feature matching.</p>
+                    <a href="#" class="more-info">More Info</a>
+                </div>
             </div>
-          </div>
-
-
-        </div>
-      </div>
-
-      <div class="overlay" id="overlay2">
-        <div class="overlay-content">
-          <button class="close-button" id="btn2" onclick="closeOverlay2()">X</button>
-          <div id="img-container">
-            <img class="movie-img" id="movie-img-id" src="movies.png" alt="Movie Social Network">
-          </div>
-          <!-- Description at the bottom center -->
-          <div class="overlay-tile-info" id="overlay-tile2-info">
-            <p>Movie Social Network</p>
-          </div>
-          <div class="overlay-tile-desc" id="overlay-tile2-desc">
-            <p>This is a cutting-edge, full-stack, and responsive movie social media platform that brings movie enthusiasts together in a vibrant and interactive online community. Users can create an account, explore a vast collection of movies, leave reviews, and connect with friends to discover new films and share their thoughts and recommendations.</p>
-          </div>
-          <!-- Languages and icons -->
-
-          <div class="key-features" id="key-features2">
-            <h3 id="key-features-title">Key Features:</h3>
-            <li>User Registration and Authentication</li>
-            <li>Movie Database and Discovery</li>
-            <li>Review and Rating System</li>
-            <li>Personalized Recommendations</li>
-            <li>Responsive Design</li>
-            <li>Webscraping Movie Databases</li>
-          </div>
-
-          <div class="icons-container" id="icons-container2">
-            <h3>Made Using: </h3>
-            <div class="icon" title="PHP">
-              <i class="devicon-php-plain colored"></i>
-              <span>&nbsp;&nbsp;&nbsp;&nbsp;PHP&nbsp;&nbsp;&nbsp;</span>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-title">Movie Social Media</div>
+                <img src="imgs/movies.png" alt="Project 4" class="project-image">
+                <div class="project-info">
+                    <h4>Movie Social Media</h4>
+                    <p>Social media platform for sharing movie reviews with friends.</p>
+                    <a href="#" class="more-info">More Info</a>
+                </div>
             </div>
-          <div class="icon" title="Node.js">
-            <i class="devicon-nodejs-plain colored"></i>
-            <span>&nbsp;&nbsp;Node.js&nbsp;</span>
-        </div>
-            <div class="icon" title="Microsoft SQL">
-              <i class="devicon-microsoftsqlserver-plain colored"></i>
-              <span>&nbsp;&nbsp;MS SQL&nbsp;&nbsp;</span>
-          </div>
-  
-            <div class="icon" title="JavaScript">
-                <i class="devicon-javascript-plain colored"></i>
-                <span>JavaScript</span>
-              </div>
-  
-          <div class="icon" title="HTML">
-            <i class="devicon-html5-plain colored"></i>
-            <span>&nbsp;&nbsp;HTML5&nbsp;&nbsp;</span>
-          </div>
-  
-          <div class="icon" title="CSS">
-            <i class="devicon-css3-plain colored"></i>
-            <span>&nbsp;&nbsp;CSS3&nbsp;&nbsp;&nbsp;</span>
-        </div>
-          </div>
-
-
-        </div>
-      </div>
-
-      <div class="overlay" id="overlay3">
-        <div class="overlay-content">
-          <button class="close-button" id="btn3" onclick="closeOverlay3()">X</button>
-          <div id="video-container">
-            <video class="aot-trailer" id="video-id" controls>
-              <source src="aot.mov" type="video/mp4">
-          </video>
-          </div>
-          <!-- Description at the bottom center -->
-          <div class="overlay-tile-info" id="overlay-tile3-info">
-            <p>3D Video Game: Inspired by Attack on Titan</p>
-          </div>
-          <div class="overlay-tile-desc" id="overlay-tile3-desc">
-            <p>An immersive 3D video game built in Unreal Engine, bringing the epic world of Attack on Titan to life. Step into the shoes of a skilled soldier and experience the thrill of swinging through the city of Shiganshina.</p>
-          </div>
-          <!-- Languages and icons -->
-
-          <div class="key-features" id="key-features3">
-            <h3 id="key-features-title">Key Features:</h3>
-            <li>Custom 3D Modelled Cityscape</li>
-            <li>Realistic Physics Simulation</li>
-            <li>Unreal Engine Supported</li>
-
-          </div>
-
-          <div class="icons-container" id="icons-container3">
-            <h3>Made Using: </h3>
-          <div class="cpp-icon" title="C++">
-            <i class="devicon-cplusplus-plain colored"></i>
-            <span class="cpp">C++</span>
-          </div>
+            <div class="project-card">
+                <div class="project-title">Real Time Facial Emotion Recognition</div>
+                <img src="imgs/fer.png" alt="Project 1" class="project-image">
+                <div class="project-info">
+                    <h4>Real Time Facial Emotion Recognition</h4>
+                    <p>Predicts emotions during a video using landmark detection + SVM</p>
+                    <a href="#" class="more-info">More Info</a>
+                </div>
             </div>
-
         </div>
-      </div>
+    </section>
+    
 
-      <script src="script.js"></script>
-      <script src="landingPage.js"></script>
+    <footer class="footer" id="footer">
+        <p>© 2025 Aidan Lilly. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/aidan-lilly" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
