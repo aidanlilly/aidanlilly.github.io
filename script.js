@@ -25,14 +25,6 @@ $('.navTrigger').click(function () {
 
 });
 
-document.querySelectorAll('.more-info').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default link action
-        alert('You clicked more info on ' + this.parentNode.querySelector('h4').textContent);
-        // You can replace this alert with a modal or redirection logic.
-    });
-});
-
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
         $('.nav').addClass('affix');
